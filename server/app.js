@@ -1,7 +1,8 @@
-import feathers from '@feathersjs/feathers';
+import { feathers } from '@feathersjs/feathers'
+import express from '@feathersjs/express'
 import socketio from '@feathersjs/socketio';
 
-const app = feathers();
+const app = express(feathers())
 const port = 5000;
 
 
